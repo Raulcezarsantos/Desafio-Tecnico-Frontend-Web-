@@ -1,38 +1,32 @@
-# Tutorial
+# Rick and Morty Explorer
 
-### Packages installation steps
+Refatoracao completa do desafio front-end com foco em arquitetura, experiencia de uso e responsividade.
 
-```
-npx create-react-app .
+## Stack
 
-npm install bootstrap
+- React 19
+- TypeScript
+- Vite
+- React Router
+- TanStack Query
 
-npm install @popperjs/core --save
+## O que melhorou
 
-npm install sass
+- Busca e filtros com estado sincronizado na URL
+- Paginas separadas para personagens, episodios e localizacoes
+- Cache de requisicoes com React Query
+- Interface mais moderna para desktop, tablet e mobile
+- Arquitetura mais limpa do que a base anterior em CRA + Bootstrap
 
-npm install react-paginate --save
+## Rodando localmente
 
-npm install react-router-dom
-
-npm start
-```
-
-### Font Awesome CDN
-
-```
-<link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-/>
-    
+```bash
+npm install
+npm run dev
 ```
 
-### Google Font Families
+## Build
 
-```
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
-
-font-family: 'Poppins', sans-serif;
-font-family: 'Ubuntu', sans-serif;
+```bash
+npm run build
 ```
