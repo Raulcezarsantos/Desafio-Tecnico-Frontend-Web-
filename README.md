@@ -2,6 +2,10 @@
 
 Refatoracao completa do desafio front-end com foco em arquitetura, experiencia de uso e responsividade.
 
+## Demo
+
+- Site publicado: https://desafio-tecnico-frontend-web.vercel.app/
+
 ## Stack
 
 - React 19
