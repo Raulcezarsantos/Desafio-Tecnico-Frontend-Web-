@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ArrowLeft, MapPin, Orbit, Sparkles } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
+import { CharacterImage } from "../components/CharacterImage";
 import { StateBlock } from "../components/StateBlock";
 import { StatusBadge } from "../components/StatusBadge";
 import { fetchCharacter } from "../lib/api";
@@ -58,7 +59,11 @@ export function CharacterDetailsPage() {
 
             <article className="details-card">
                 <div className="details-image-wrap">
-                    <img src={character.image} alt={character.name} />
+                    <CharacterImage
+                        src={character.image}
+                        alt={character.name}
+                        fallbackLabel={character.name}
+                    />
                 </div>
 
                 <div className="details-copy">

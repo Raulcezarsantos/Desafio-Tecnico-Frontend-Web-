@@ -1,6 +1,7 @@
 import { MapPin, Orbit } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { Character } from "../lib/types";
+import { CharacterImage } from "./CharacterImage";
 import { StatusBadge } from "./StatusBadge";
 
 interface CharacterCardProps {
@@ -11,7 +12,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
     return (
         <Link className="character-card" to={`/characters/${character.id}`}>
             <div className="character-card-image-wrap">
-                <img src={character.image} alt={character.name} loading="lazy" />
+                <CharacterImage src={character.image} alt={character.name} fallbackLabel={character.name} />
                 <StatusBadge status={character.status} />
             </div>
 
